@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let go</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<header class="">
+    <h2 class="text-center text-3xl my-5">Let's get some <span
+            class="text-4xl font-semibold text-cyan-600 ">Manooooy...</span></h2>
+</header>
+
+<body>
+    <main>
+        <section class="mt-5 w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-white">
+            <div class="bg-orange-500 py-8 px-5 rounded">
+                <h1 class="font-mediam">Deposit</h1>
+                <h1 class="text-3xl">$<span id="depositTk">00</span></h1>
+            </div>
+            <div class="bg-purple-500 py-8 px-5 rounded">
+                <h1  class="font-mediam">WithDraw</h1>
+                <h1  class="text-3xl">$ <span id="withdowTk">00</span></h1>
+            </div>
+            <div class="bg-green-500 py-8 px-5 rounded">
+                <h1 class="font-mediam">Balance</h1>
+                <h1 class="text-3xl">$<span id="balanceTk">1200</span></h1>
+            </div>
+        </section>
+        <!-- deposit and withdow -->
+        <section class="mt-5 w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 ">
+            <div class="bg-lime-500 py-8 px-5 rounded">
+                <h1 class="font-mediam mb-3 text-white">Please Deposit</h1>
+                <input id="deposit-field" class="block mb-3 w-9/12 px-2 rounded" type="text" name="" 
+                    placeholder="$ Amount you want to deposit">
+                <button id="btn-deposit"
+                    class="hover:bg-orange-500 bg-cyan-700 text-white px-5 py-2 rounded-lg font-mediam">Sumbit</button>
+            </div>
+            <div class="bg-fuchsia-500 py-8 px-5 rounded">
+                <h1 class="font-mediam mb-3 text-white">Please WithDraw</h1>
+                <input  id="withdraw-field"class="block mb-3 w-9/12 px-2 rounded" type="text" name=""
+                    placeholder="$ Amount you want to deposit">
+                <button id="btn-withdraw"
+                    class="hover:bg-green-500 bg-cyan-700 text-white px-5 py-2 rounded-lg font-mediam">Sumbit</button>
+            </div>
+            
+        </section>
+    </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
